@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2023 Year in Review</title>
+    <style>
+      body { margin:1em auto; width:35em; font-family: sans-serif; background-color: #ffffff; }
+      p {text-align: justify; justify: inter-word; line-height: 135%;}
+
+      /* CSS for the text message bubble: https://stackoverflow.com/posts/71155446/ */
+      .chat {
+          --rad: 20px;
+          --rad-sm: 3px;
+          font: 16px/1.5 sans-serif;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          max-width: 500px;
+          margin: auto;
+      }
+
+      .msg {
+          position: relative;
+          max-width: 75%;
+          padding: 7px 15px;
+          margin-bottom: 2px;
+      }
+
+      .msg.sent {
+          border-radius: var(--rad) var(--rad-sm) var(--rad-sm) var(--rad);
+          background: #42a5f5;
+          color: #fff;
+          /* moves it to the right */
+          margin-left: auto;
+      }
+
+      .msg.rcvd {
+          border-radius: var(--rad-sm) var(--rad) var(--rad) var(--rad-sm);
+          background: #f1f1f1; 
+          color: #555;
+          /* moves it to the left */
+          margin-right: auto;
+      }
+
+      /* Improve radius for messages group */
+      .msg.sent:first-child,
+      .msg.rcvd+.msg.sent {
+          border-top-right-radius: var(--rad);
+      }
+
+      .msg.rcvd:first-child,
+      .msg.sent+.msg.rcvd {
+          border-top-left-radius: var(--rad);
+      }
+
+      /* time */
+      .msg::before {
+          content: attr(data-time);
+          font-size: 0.8rem;
+          position: absolute;
+          bottom: 100%;
+          color: #888;
+          white-space: nowrap;
+          /* Hidden by default */
+          display: none;
+      }
+
+      .msg.sent::before {
+          right: 15px;
+      }
+
+      .msg.rcvd::before {
+          left: 15px;
+      }
+
+      /* Show time only for first message in group */
+      .msg:first-child::before,
+      .msg.sent+.msg.rcvd::before,
+      .msg.rcvd+.msg.sent::before {
+          /* Show only for first message in group */
+          display: block;
+      }
+    </style>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  <h1>Welcome to my 2023 Year in Review!</h1>
+  <p>
+    If you haven't read last year's, you might want to check it out
+    first, as many of the same themes that marked my 2022 continue on
+    in 2023.
+  </p>
+  <p>
+    <a href="../2022/">Aaron's 2022 Year in Review</a>
+  </p>
+  <p>
+    And speaking of contining themes, let's kick this one off with my
+    big fitness achievement of this year...
+  </p>
+  <h1>Golden Gate Trail Classic 50K</h1>
+  <p>
+    It all started with a text...
+  </p>
+  <div class="chat">
+    <div data-time="Wednesday, Feb 8, 2023 | 07:08 | Chris Johnson" class="msg rcvd">
+      There's a 50k trail race in San Fran and the marin headlands on <u>Nov 18</u>, fyi.
+      There's also 10k and half marathon options.
+    </div>
+  </div>
+  <p>
+    See, back in December 2022, as I was just starting to get into
+    running, I started a DM group with college best friends who have
+    all been runners for many years.  It was equal amounts of
+    discussion on running, races, and general shit-talking.  And on
+    February 8, 2023, Chris set it all in motion with that one text.
+  </p>
+  <div><img src="GoldenGateTrailClassic-course.png" width="100%" title="Golden Gate Trail Classic 50K Course" /></div>
+  <p>
+    At this point, I had just started running regularly, with just a
+    few 5K races under my belt, so a 50K trail race felt
+    a <em>looooooong</em> ways off.  But, I was interested, so I
+    signed up for the 10K distance.  Over the course of the ensuing
+    months, as I ran more, gradually extended the distances of my
+    races, and with the encouragement and support of my friends, I
+    finally felt up to the challenge of the 50K distance and upgraded
+    my registration to the full 50K.
+  </p>
+  <div><img src="GoldenGateTrailClassic-ferry.jpg" width="100%" title="Taking the ferry to Sausalito" /></div>
+  <p>
+    When the race finally came, it was a weekend full of friendship
+    and fun, for not only did the runners all fly out to San Francisco
+    to run with me, but their wives also came along to make a big trip
+    out of it.  Jon & Ellen, Zuf & Jennie, and Chris & Kristen all
+    flew out for the long weekend.  We took the ferry over to
+    Sausalito fo lunch, carbo loaded with Chicago-style pizza, and
+    enjoyed a sunny brunch out on the deck at Mission Rock Resort.
+  </p>
+  <div><img src="GoldenGateTrailClassic-runners.jpg" width="100%" title="Trail Delts ready to run!" /></div>
+  <p>
+    The race itself was an incredible experience: 50 kilometers, or 31
+    miles, starting at Land's End in San Francsico, across the Golden
+    Gate Bridge, and then a big loop around the Marin Headlands.  All
+    told, nearly 6,000 feet of climb and 6,000 feet of descent over
+    the course of the 50K.  The weather was very misty and cloudy with
+    some light rain, but at least it kept us cool.  The four of us
+    &mdash; Zuf, Chris, Jon, and me &mdash; stayed together for about 75% of
+    the race, then Zuf and I went ahead just before finishing the loop
+    and returning across the Golden Gate Bridge.
+  </p>
+  <div><img src="GoldenGateTrailClassic-runners-on-course.jpg" width="100%" title="Over halfway done!" /></div>
+  <p>
+    When we arrived back to the start/finish line, I was so pumped,
+    that I ran at full sprint with everything I had left for the last
+    50 yards and lept in the air across the finish line!
+  </p>
+  <p>
+    I almost couldn't believe it: going from my first 5K in 32-some
+    years to completing an ultramarathon, all in under 12 months.  I
+    could not have done it without their encouragement and support.
+  </p>
+  <div><img src="GoldenGateTrailClassic-Aaron.jpg" width="100%" title="Me making the first big climb" /></div>
+ 
+  <h1>Running</h1>
+  <p>
+    In addition to the Golden Gate Trail Classic 50K, I ran a race of
+    some sort or another nearly every month this year.
+  </p>
+  <div><img src="RaceBibs.jpg" width="100%" title="Race Bibs" /></div>
+  <p>
+    The other big running achievement came a few weeks after that
+    ultramarathon.  That first race I ran as part of this journey, The
+    Elf Run 5K (3.1 miles), is an annual affair, so I had my sights
+    set on running it again and dramatically improving my time over
+    last year.
+  </p>
+  <div><img src="ElfRunTime.png" width="100%" title="Crushed it with a 22:22" /></div>
+  <p>
+    Crushed it!
+  </p>
+  <p>
+    Last year I clocked a time of 32 minutes and 56 seconds.  This
+    year, my goal was 25 minutes, which is almost exactly an
+    8-minute/mile pace.  My secret, deep in my heart-of-hearts stretch
+    goal was to knock a solid 10 minutes off my time and get under
+    22:56.  Beat 'em both with a time of 22:22!
+  </p>
+  
+  <h1>Travels</h1>
+  <p>
+    But my year was not defined by running alone, I also enjoyed two
+    big trips.
+  </p>
+
+  <h2>Whistler Blackcomb</h2>
+  <p>
+    I was able to check-off a bucket list item with a month of
+    snowboarding at Whistler Blackcomb ski resort.
+  </p>
+  <div><img src="WhistlerBlackcomb-3.jpg" width="100%" title="Blame Canada!" /></div>
+  <p>
+    Growing up in the Seattle area and starting to ski as a teenager,
+    Whistler Blackcomb always loomed large in the collective ski
+    consciousness, being the largest ski resort in the northwest, and
+    fabled for it's long top-to-bottom runs.  So, in late 2022, when
+    the right opportunity arose, I booked a ski-in/ski-out condo for
+    the entire month of January.  I could walk out of the condo, cross
+    the street, and then just steps to the gondola.  A snowboarder's
+    dream come true.  All told, I got 26 days on the mountain (I did
+    need a few rest days in there).
+  </p>
+  <div><img src="WhistlerBlackcomb-2.jpg" width="100%" title="Me and Mark at over 6,000 feet" /></div>
+  <p>
+    An extra bonus to the whole adventure was that my best friend Mark
+    Irwin joined me for the final weekend.  Mark had started skiing
+    back home in Ohio a few years prior, but hadn't had the chance to
+    ski any big mountains.  Now was the time.  We enjoyed the long
+    weekend hitting the slopes together and taking in the majesty of
+    the Canadian mountains.
+  </p>
+
+  <h2>Alaska</h2>
+  <p>
+    Speaking of month-long trips to the northern reaches &mdash; I
+    spent the whole month of July in Anchorage, Alaska.
+  </p>
+  <p>
+    As I wrote in last-year's review, my role at Databricks is a
+    fully-remote position, which means I can travel and work from
+    wherever I want as long as I get my job done.  I had been thinking
+    about a trip to Alaska for quite some time and decided to leverage
+    my remote-work situation and rented an Airbnb in Anchorage for the
+    entire month of July.  I worked for the first two weeks, while
+    exploring Anchorage; then took the latter half of the month as PTO
+    and did all my excursions.
+  </p>
+  <div><img src="AnchorageDusk.jpg" width="100%" title="Anchorage at dusk, around 11pm" /></div>
+  <p>
+    Getting close to 20 hours of daylight was wild.  TBH, it didn't
+    take long to adjust, and fortunately the Airbnb had good blackout
+    curtains in the bedroom, so sleep wasn't a problem.  It was just
+    trippy to be outside at 10 or 11pm and the sun wasn't even setting
+    yet.
+  </p>
+  <p>
+    My Airbnb host is part of an informal hiking group and they do a
+    hike in the Anchorage area every week.  I was able to join them
+    for a couple hikes, and although just about every one of them had
+    a story to tell of a bear encounter, fortunately I never saw a
+    bear the whole trip.  I did have a too-close-for-comfort encounter
+    with an adult male moose, and that was enough wildlife for me.
+  </p>
+  <p>
+    Three standout experiences to share: Denali, Seward Whale Watching Tour,
+    and Matanuska Glacier Hike.
+  </p>
+  <div><img src="DenaliTrainViews.jpg" width="100%" title="Scenery on train ride up to Denali" /></div>
+  <p>
+    There's a booze-cruise tourist train that runs from Anchorage up
+    to Denali National Park and Preserve.  It brought me up there for
+    a short, 2-day stay at one of the resort lodges near the park
+    entrance.  Amazing scenery from the train as you climb from
+    sea-level Anchorage up to the mountains around Denali.  Even
+    though the skies were clear, Denali is so tall it tends to create
+    it's own weather system, and unfortunately it was clouded during
+    my stay.  Nevertheless, I did get a long day-hike guided by a
+    local tour operator, who showered us with endless knowledge of the
+    flora and fauna of the region.
+  </p>
+  <div><img src="SewardWhaleWatching-me.jpg" width="100%" title="Seward Whale Watching Tour" /></div>
+  <p>
+    I did a day trip to Seward for a whale watching tour.  The train
+    (again) from Anchorage to Seward (and back) winds its way through
+    some absolutely stunning scenery, making the train ride an equally
+    important part of the journey to the boat tour.  Once on the boat,
+    we slowly made our way out to mouth of open ocean of the Gulf of
+    Alaksa, where we were treated to the antics of a humpback whale
+    for nearly 30 minutes.  Identified by tail markings, this one was
+    recognized as "Morgan le Fay". She entertained us with lots of
+    tail slaps, breaches, and spouting water.  Such a rare treat!
+  </p>
+  <div><img src="MatanuskaGlacierHike.jpg" width="100%" title="Matanuska Glacier hike" /></div>
+  <p>
+    But I must say that the most unique experience in Alaska was the
+    Matanuska Glacier Hike.  Walking on the glacier felt like being on
+    another planet.  It wasn't that much colder, but the desolation
+    and scale of it was mind-boggling.  The glacier is 4 miles wide,
+    26 miles long, and over 1,000 feet deep.  There's nothing to use
+    as a sense of scale neither.  You'd see a big chunk of ice and
+    think it was maybe 100-200 yards away, then the guide would tell
+    you that it was actually a 4 mile hike to it.  A
+    once-in-a-lifetime experience.
+  </p>
+  
+  
+  <h1>Gotta Pay the Bills</h1>
+  <p>
+    In more mundane matters, I remain gainfully employed by Databricks
+    as a Lead Solutions Architect.  I celebrated my 4-year anniversary
+    on November 11, 2023.  The company continues to do well, and I
+    don't forsee any big changes there in the coming year.
+  </p>
+  <p>
+    Also, returned to University of San Francisco to teach a night
+    class in their MBA program.  It's only 1 class for 1 semester, so
+    not a huge time commitment, but is fun to do and a rewarding
+    experience.  I plan to teach it again in the coming Spring.
+  </p>
+  
+  <h1>What's to Come?</h1>
+  <p>
+    What is on tap for 2024, you ask?  In January, I'm going to
+    Colorado for a 17-day ski trip.  Yep, I said "ski" trip.  After
+    snowboarding for the past 20 years, my snowboard equipment is
+    end-of-life, so I decided to switch back to skiing this year.  I
+    have a condo in Vail for 17 days and plan to hit a couple
+    different resorts while I'm there.
+  </p>
+  <p>
+    I also have a race schedule put together for the first half of the
+    year, with a mix of races at different distances and varieties
+    (some road, some trail), all culminating with the San Francisco
+    Marathon at the end of July.
+  </p>
+  <p>
+    P.S. the only social media I'm on now is Instagram, where you can
+    find lots of photos of my travels, as well as my home-cooked
+    meals: <a href="https://www.instagram.com/aaron.binns/">@aaron.binns</a>
+  </p>
+  <p>
+    Or you can always reach me
+    at: <a href="mailto:aaron@randomshiznat.com">aaron@randomshiznat.com</mailto>
+  </p>
+  </body>
+</html>
