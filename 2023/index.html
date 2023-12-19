@@ -4,7 +4,11 @@
     <title>2023 Year in Review</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
-      body { margin: 1em auto; width: 35em; font-family: sans-serif; background-color: #ffffff; padding: 1em; }
+      body { margin: 1em auto; width: 35em; font-family: sans-serif; background-color: #ffffff; padding: 0 2em; }
+      /* For mobile, use bigger font size */
+      @media only screen and (max-width: 767px) {
+         body { font-size: 2em; }
+      }
       p {text-align: justify; justify: inter-word; line-height: 135%;}
 
       /* CSS for the text message bubble: https://stackoverflow.com/posts/71155446/ */
