@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2024 Year in Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      body { margin: 1em auto; width: 35em; font-family: sans-serif; background-color: #ffffff; }
+      @media only screen and (max-width: 767px) {
+          body { width: 25em; padding: 0 1em; }
+          h1 { font-size: 125%; }
+      }
+      p {text-align: justify; justify: inter-word; line-height: 135%;}
+
+      .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+      }
+
+      /* CSS for the text message bubble: https://stackoverflow.com/posts/71155446/ */
+      .chat {
+          --rad: 20px;
+          --rad-sm: 3px;
+          font: 16px/1.5 sans-serif;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          max-width: 500px;
+          margin: auto;
+      }
+
+      .msg {
+          position: relative;
+          max-width: 75%;
+          padding: 7px 15px;
+          margin-bottom: 2px;
+      }
+
+      .msg.sent {
+          border-radius: var(--rad) var(--rad-sm) var(--rad-sm) var(--rad);
+          background: #42a5f5;
+          color: #fff;
+          /* moves it to the right */
+          margin-left: auto;
+      }
+
+      .msg.rcvd {
+          border-radius: var(--rad-sm) var(--rad) var(--rad) var(--rad-sm);
+          background: #f1f1f1; 
+          color: #555;
+          /* moves it to the left */
+          margin-right: auto;
+      }
+
+      /* Improve radius for messages group */
+      .msg.sent:first-child,
+      .msg.rcvd+.msg.sent {
+          border-top-right-radius: var(--rad);
+      }
+
+      .msg.rcvd:first-child,
+      .msg.sent+.msg.rcvd {
+          border-top-left-radius: var(--rad);
+      }
+
+      /* time */
+      .msg::before {
+          content: attr(data-time);
+          font-size: 0.8rem;
+          position: absolute;
+          bottom: 100%;
+          color: #888;
+          white-space: nowrap;
+          /* Hidden by default */
+          display: none;
+      }
+
+      .msg.sent::before {
+          right: 15px;
+      }
+
+      .msg.rcvd::before {
+          left: 15px;
+      }
+
+      /* Show time only for first message in group */
+      .msg:first-child::before,
+      .msg.sent+.msg.rcvd::before,
+      .msg.rcvd+.msg.sent::before {
+          /* Show only for first message in group */
+          display: block;
+      }
+    </style>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  <h1>Welcome to my 2024 Year in Review!</h1>
+  <p>
+
+  </p>
+  <p>
+    <a href="../2023/">Aaron's 2023 Year in Review</a>
+  </p>
+  <p>
+
+  </p>
+  <h1>Year of the Marathon!</h1>
+  <p>
+    My big goal for 2024 was to run a marathon.
+  </p>
+  <p>
+    That's right, a full-on marathon: 26.2 miles...as fast as you can.
+  </p>
+  <h2>San Francisco Marathon</h2>
+  <p>
+    Considered one of the most beautiful and challenging marathon
+    courses.  Beautiful because you run along the Embarcadero
+    waterfront, up and over the Golden Gate Bridge (twice!), then
+    through Golden Gate Park and back to the Bay to finish in front of
+    the historic Ferry Building.  But also challenging due to the 700
+    feet of uphill that you run along the course, not to mention the
+    corresponding 700 feet back down.  But, I have to say, the beauty
+    of the course wins out.  I kept thinking to myself,
+    "I <em>get</em> to do this!"  Yes, it's a challenge, but a
+    challenge I am so privileged to be able to take on.
+  </p>
+  <p>
+    I started training in March for the race at the end of July.  It
+    was an 18-week training program from Hal Higdon.  I won't dive
+    into the details here, but if you are interested in the training
+    progression: <a href="https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/">Marathon
+    Training: Novice 1</a>.
+  </p>
+  <div><img src="SF-marathon-morning.jpg" width="100%" title="Excited to start my first marathon!" /></div>
+  <p>
+    On race day, I was super pumped, very well trained and prepared.
+    I felt strong through the first half, and thought that if I could
+    buckle-down and make it to mile 20, then all the uphills would be
+    done and I could fly down from Haight-Ashbury to the Mission and
+    then blast through the last few flat miles to the finish line.
+  </p>
+  <p>
+    But, just like everyone says, between mile 20 and 22 I hit "the
+    wall".  It was actually kinda amazing to experience the body
+    breaking down, literally feeling the nerve impulses not move down
+    and through the legs as efficiently as before.  It was kinda like
+    driving a car that was leaking oil: you could feel the engine
+    struggling and starting to sputter as the essential ingredients to
+    keep it running were depleted.  By the time I hit the final couple
+    miles, I could feel my right hamstring on the verge of cramping,
+    ending the race on the spot.  There were so many other runners
+    pulling up with similar cramping problems; the sidewalks were
+    littered with bodies.  I had to mix walking with running to keep
+    it from freezing-up entirely., but I rallied and ran through the
+    finish line with an official time: 3:49:47!
+  </p>
+  <div><img src="SF-marathon.jpg" width="100%" title="San Francsico Marathon" /></div>
+  <p>
+    I did it!!  I completed my first marathon!  And under 4 hours!
+  </p>
+  <p>
+  </p>
+
+  <h2>California International Marathon</h2>
+  <img src="run-another-one.jpg" class="center" />
+  <p>
+    About a week after finishing the SF Marathon, I thought....I could
+    do better.
+  </p>
+  <p>
+    So, I signed up for the California International Marathon (CIM) in
+    December.  CIM is actually hosted in Sacramento, with the course
+    starting out near Folsom Lake and finishing on the steps of the
+    state capitol building.  TBH, not as inspiriing a course as San
+    Francisco, but CIM is a "downhill" course and where many people
+    achieve their fastest marathon times.
+  </p>
+  <p>
+    Knowing how the wheels came off the wagon around mile 22 in the SF
+    Marathon, I was eager try again and see if I could improve on that
+    final stage.  So, I decided to raise my training
+    regimen <a href="https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon/">one
+    level up</a> and see what I could do.  This more aggressive
+    training program felt doable, but was no joke: it was nearly 100
+    miles more than what I did for the SF Marathon, and I was going to
+    run it more aggressively to see what my limits were.
+  </p>
+  <p>
+    Well, you don't discover your limits during training, but on race
+    day
+  </p>
+  <p>
+    That's my main take-away from CIM, my second marathon.
+  </p>
+  <p>
+    The CIM training program went well, showing improvement from the
+    SF Marathon training program at every step of the way.  And come
+    race day, I was ready with corrections to some minor mistakes I
+    had made in fueling and hydration the first time around; nothing
+    major, just some tweaks.  I was also cognizant that CIM is a fast,
+    downhill course at the start, so I went out purposefully a bit
+    slower than my first time out.  This strategy initially paid off
+    well, as I hit the halfway mark feeling a lot stronger than in my
+    first marathon.  I felt well-positioned to keep my pace up,
+    perhaps even running faster in the second half.
+  </p>
+  <p>
+    Then, I hit that same mile 22 -- and just like in the first
+    marathon -- the wheels fell off the applecart.  I started getting
+    some serious cramping in my calves, especially the left one.  For
+    about the next 2 miles I had to alternate between running and
+    walking, even stopping here and there to stretch out the calves.
+    I am proud of myself that I grit my teeth and ran the final 2.2
+    miles, pushing strong across the finish line.
+  </p>
+  <div><img src="CIM.jpg" width="100%" title="California International Marathon" /></div>
+
+  <h1>Year of the Ultra-Marathon!</h1>
+  <p>
+    But wait, there's more!
+  </p>
+  <p>
+    Yep, in addition to running 2 regular-degular marathons this year,
+    I also ran 2 ultra-marathons
+  </p>
+  <p>
+    What's an ultra-marathon, you ask?  Well, it's just any race
+     longer than a marathon.  Also, <em>ultras</em> (as they are known)
+    are typically run on trails, or some combination or trails and
+    road.  You can think of a regular "road marathon" as the kind of
+    race that is through downtown city streets, whereas an
+    ultra-marathon is out in the woods or countryside.
+  </p>
+  <p>
+    Also, classic marathons are a fixed distance of 26.2 miles, but
+    ultras can be either a fixed distance (usually 31 miles or more)
+    or some other format that results in runners running more than a
+    marathon in total.  More on that to below!
+  </p>
+  
+  <h2>Icy-8</h2>
+  <p>
+    The Icy-8 is not a race of distance, but rather of time: you have
+    8 hours to run as far as possible.
+  </p>
+  <p>
+    The course is setup as loops: 8 miles, 4 miles, 2 miles.  You can
+    run as many loops as you can/want within 8 hours, and at the end
+    they total up your distance.
+  </p>
+  <p>
+    Oh, and I forgot to say, this is out in the Virginia countryside!
+    So, I flew out to DC to hang out with Chris and Jon as we made our
+    way around the course.  Mind you, this was back in February, in
+    the middle of the Virginia winter, but we lucked out with an
+    entirely pleasant day with pretty much ideal conditions for a
+    mid-winter ultra.
+  </p>
+  <div><img src="Icy8.jpg" width="100%" title="Me, CJ, and Jon at the Icy-8 Ultra Trail Race" /></div>
+  <p>
+    I did four 8-mile loops, for a total of 32 miles, in 7 hours and
+    45 minutes.
+  </p>
+  <p>
+    I gotta say that some highlights of that weekend were the
+    post-race burgers and beers followed by a rejuvinating dip in the
+    hot tub!
+  </p>
+
+  <h2><a href="https://brylers.com/">Brylers Backyard Marathon</a></h2>
+  <p>
+    But why run one ultra when you can run two at twice the price?
+  </p>
+  <p>
+    Late summer I walk talking with Tyler, a co-worker at Databricks,
+    about our respective running journeys and he mentioned that he and
+    his friend Bryce were organizing a backyard marathon in their
+    hometown of Austin, TX.  A backyard marathon, you say?  I'm in!
+  </p>
+  <p>
+    Like the Icy-8, the backyard marathon format is not one of
+    distance, and unlike the Icy-8, it is not a bound by time --
+    rather, it's
+    a <a href="https://www.youtube.com/watch?v=ZRXKZSqvtrw&pp=ygURYmFja3lhcmQgbWFyYXRob24%3D">"last
+    one standing race"</a>.  You map out a loop, in our case, a 2.5
+    mile trail loop that starts and ends at Tyler's house; then you
+    run that loop at the top of the hour, then the top of the next
+    hour, and so on and so on until no one can run any more loops.  We
+    started at 7am and ran 15 loops in 15 hours, calling it quits at
+    10pm.
+  </p>
+  <div><img src="Brylers-Backyard-Marathon.jpg" width="100%" title="Brylers Backyard Marahton runners" /></div>
+   <p>
+    What I liked about this format is that you stay together.  Unlike
+    other utra races, where you tend to spread out over the course,
+    this is a fairly short loop, and everyone is back to Tyler's house
+    after 30-35 mins of running, and then you have 25-30 mins to
+    snack, rehydrate, stretch and rest, then at the top of the next
+    hour, everyone starts the next loop together.  Well, at least
+    everyone who can muster up another loop!
+  </p>
+  <div><img src="Tyler-Bryce-me.jpg" width="100%" title="Tyler, Bryce, and me after 15 loops in 15 hours" /></div>
+  <p>
+    We had about 30 people participate throughout the day.  Some came
+    in the morning to run a few loops; others stopped by in the
+    afternoon, and a few left and then came back in the evening to
+    give us an energy boost.  Tyler, Bryce, and I did the full 15
+    loops over the course of 15 hours.  Our efforts were rewarded with
+    pizza delivery and some ice cold beers just before midnight.
+  </p>
+    
+  <h1>Winter Sports</h1>
+  <p>
+    But 2024 was not all about just running...how about some skiing
+    too!
+  </p>
+  <p>
+    The main part of this story was an extended ski holiday in Vail,
+    Colorado.  This was actually my very first time skiing (or
+    snowboarding for that matter) in the Rocky Mountains.  Oh, and
+    that's right, I said skiing, not snowboarding.  After last year's
+    trip to Whistler Blackcomb, my snowboard gear was 20 years old and
+    end-of-life.  I decided to go back to skiing, just for variety's
+    sake.
+  </p>
+  <p>
+    The best part about the Vail trip wasn't the condo with a hot tub,
+    nor the massive, massive terrain at Vail, but the fact that I got
+    to share the experience with three of my best friends.  Scott
+    drove out from Denver/Boulder for a few days and we skiied both
+    Vail and Beaver Creek.
+  </p>
+  <div><img src="Vail-with-Scott.jpg" width="100%" title="Me and Scott at Vail" /></div>
+  <p>
+    After Scott, Rob flew out from SF and we
+    got a solid week in at Vail, running what felt like a thousand
+    laps in the legendary Back Bowls.
+  </p>
+  <div><img src="Vail-with-Rob.jpg" width="100%" title="Me and Rob at Vail" /></div>
+  <p>
+    Then, Rob took off and Mark flew out from Cleveland for few days
+    of cruising and being terrorized by 5-7 year olds flying by us
+    geezers.
+  </p>
+  <div><img src="Vail-with-Mark.jpg" width="100%" title="Me and Mark at Vail" /></div>
+  <p>
+    After returning from Vail, Rob and I did some weekend trips up to
+    Tahoe for the remainder of the season.  All told:
+    <ul>
+      <li>27 days on the slopes</li>
+      <li>5 resorts: Vail, Beaver Creek, Palisades, Alpine, Homewood</li>
+      <li>402 runs</li>
+      <li>447,512 vertical feet</li>
+      <li>714.12 total miles</li>
+    </ul>
+  </p>
+  <div><img src="Homewood.jpg" width="100%" title="Homewood view of Lake Tahoe" /></div>
+
+  <h1>Health, Fitness, and Wardrobe</h1>
+  <p>
+    As you can imagine, with all the skiing, running and weight
+    training I did throughout the year, I kept quite well to my
+    fitness goals.  As far as weight goes, I entered the year at 187
+    pounds, and by the end of June I had reduced down as low as 165.
+    That wasn't my target really, I just wanted to see how low I could
+    go by the mid-year mark.  My target maintenance range is somewhere
+    between 170 and 175, which I've been able to maintain for the
+    second half of the year.
+  </p>
+  <p>
+    I also was curious about body composition (essentially your body
+    fat %), so I signed up
+    with <a href="https://www.bodyspec.com/">BodySpec</a> for regular
+    Dexa scans throughout the year.  I set a goal of being below 20%
+    body fat by mid-year and crushed it with a measurement of 17% at
+    165 pounds (75 kg).
+  </p>
+  <p>
+    The one aspect of slimmng down that I didn't fully appreciate was
+    that I'd have to buy all new clothes!  Sure, it makes logical
+    sense, but after getting through ski season wearing mostly
+    athletic gear and leisure-wear, I decided that I needed some new
+    clothes for summer.
+  </p>
+  <p>
+    To start adjusting to this "new normal" of body shape, I thought
+    I'd start off simple and cheap by hitting the major fast-fashion
+    retailers: Zara, H&amp;M, Gap, etc.  What really took me by
+    surprise was the sizing.  Sure, I had grabbed some t-shirts during
+    ski season, which were size Medium, but for some of the stuff I
+    was buying for summer -- casual summer shirts and shorts -- I was
+    buying size Small.  Outrageous!
+  </p>
+  <p>
+    While I'm sure there as been "grade deflation" in sizes over the
+    years, I haven't been this size since my college days.
+  </p>
+
+  <h1>Family</h1>
+  <p>
+    Good fortune shined upon me with a work trip up to Seattle in
+    early October.  This afforded me a chance to have dinner with
+    Diana, Steve, Rebecca, and Philip.  So good to see and hear that
+    everyone is doing well!
+  </p>
+  <div><img src="Rennicks.jpg" width="100%" title="Steve, Philip, Rebecca, me, Diana" /></div>
+  
+  <h1>Looking Forward</h1>
+  <p>
+    2024 was such an amazing year, packed with so many fantastic and
+    rewarding experiences, only a sliver of which I could share with
+    you in this letter.  Therefore, I am looking forward to 2025 with
+    excitement and eagerness of all the amazing experiences yet to
+    come.  I kick off the new year in proper fashion with a 2-week ski
+    trip to Japan: one week in Hakuba Valley and one week in Niseko.
+  </p>
+  <p>
+    I hope to see you in the new year!
+  </p>
+  <p>
+    P.S. the only social media I'm on now is Instagram, where you can
+    find photos of my travels, as well as my home-cooked
+    meals: <a href="https://www.instagram.com/aaron.binns/">@aaron.binns</a>.
+    I'm also <a href="https://www.strava.com/athletes/114497610">on
+    Strava</a> if you want to see what kind of crazy runs I'm doing in
+    2025.
+  </p>
+  <p>
+    Or you can always reach me
+    at: <a href="mailto:aaron@randomshiznat.com">aaron@randomshiznat.com</mailto>
+  </p>
+  </body>
+</html>
